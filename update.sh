@@ -1,5 +1,5 @@
 GOOS=linux go build && \
-zip supreme-octo-enigma.zip supreme-octo-enigma && \
-rm supreme-octo-enigma && \
-aws lambda update-function-code --function-name ephemeral --zip-file fileb://supreme-octo-enigma.zip && \
-rm supreme-octo-enigma.zip
+zip autodelete-tweets.zip autodelete-tweets && \
+rm autodelete-tweets && \
+aws lambda update-function-code --function-name autodelete-tweets --zip-file fileb://autodelete-tweets.zip && \
+rm autodelete-tweets.zip
